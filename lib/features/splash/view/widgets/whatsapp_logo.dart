@@ -14,14 +14,17 @@ class WhatsAppLogo extends StatelessWidget {
       children: [
         Image.asset(
           AssetImages.logo,
-          scale: 4,
+          scale: 5,
+        ),
+        const SizedBox(
+          height: 10,
         ),
         const Text(
           "WhatsApp",
           style: TextStyle(
             fontWeight: FontWeight.bold,
             color: AppColors.kPrimaryColor,
-            fontSize: 25,
+            fontSize: 30,
           ),
         ),
       ],

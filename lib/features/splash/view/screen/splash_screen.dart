@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:whats_app/features/splash/view/screen/welcome_screen.dart';
 import 'package:whats_app/features/splash/view/widgets/whatsapp_logo.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -18,7 +17,9 @@ class _SplashScreenState extends State<SplashScreen> {
         seconds: 3,
       ),
       () {
-        Navigator.pushReplacementNamed(context, WelcomeScreen.id);
+        if (mounted) {
+          // Navigator.pushReplacementNamed(context, WelcomeScreen.id);
+        }
       },
     );
     super.initState();
@@ -35,19 +36,26 @@ class _SplashScreenState extends State<SplashScreen> {
             width: double.infinity,
           ),
           Expanded(
-            flex: 2,
-            child: WhatsAppLogo(),
-          ),
-          Expanded(
+            flex: 3,
             child: Column(
               children: [
+                Spacer(flex: 2),
+                WhatsAppLogo(),
+                Spacer(),
                 Text(
                   "The best chat app",
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                    fontSize: 21,
+                    fontWeight: FontWeight.w600,
                   ),
                 ),
-                Spacer(),
+              ],
+            ),
+          ),
+          Expanded(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
                 Text(
                   "Developed by Hayam Tarek",
                   style: TextStyle(
