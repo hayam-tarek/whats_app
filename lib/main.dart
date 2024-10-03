@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:whats_app/core/theme/colors.dart';
-import 'package:whats_app/features/splash/view/screen/splash_screen.dart';
-import 'package:whats_app/features/splash/view/screen/welcome_screen.dart';
+import 'package:whats_app/features/splash/presentation/view/screens/splash_screen.dart';
+import 'package:whats_app/features/splash/presentation/view/screens/welcome_screen.dart';
 
 void main() {
   runApp(const WhatsApp());

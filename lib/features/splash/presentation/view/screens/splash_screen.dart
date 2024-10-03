@@ -1,5 +1,8 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:whats_app/features/splash/view/widgets/whatsapp_logo.dart';
+import 'package:whats_app/features/splash/presentation/view/screens/welcome_screen.dart';
+import 'package:whats_app/features/splash/presentation/view/widgets/typewriter_animated_text.dart';
+import 'package:whats_app/features/splash/presentation/view/widgets/whatsapp_logo.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -18,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
       ),
       () {
         if (mounted) {
-          // Navigator.pushReplacementNamed(context, WelcomeScreen.id);
+          Navigator.pushReplacementNamed(context, WelcomeScreen.id);
         }
       },
     );
@@ -27,32 +30,31 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(
+          const SizedBox(
             width: double.infinity,
           ),
           Expanded(
             flex: 3,
             child: Column(
               children: [
-                Spacer(flex: 2),
-                WhatsAppLogo(),
-                Spacer(),
-                Text(
-                  "The best chat app",
-                  style: TextStyle(
-                    fontSize: 21,
-                    fontWeight: FontWeight.w600,
-                  ),
+                const Spacer(flex: 2),
+                const WhatsAppLogo(),
+                const Spacer(),
+                AnimatedTextKit(
+                  animatedTexts: [
+                    typewriterAnimatedText(),
+                  ],
+                  totalRepeatCount: 1,
                 ),
               ],
             ),
           ),
-          Expanded(
+          const Expanded(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
