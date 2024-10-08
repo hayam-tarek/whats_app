@@ -8,4 +8,6 @@ abstract class AppColors {
   static const Color kThirdColor = Color(0xffDCF8C6);
 
   static const Color kGreyColor = Color(0xffECE5DD);
+
+  static const Color kBlueColor = Color(0xff34B7F1);
 }
