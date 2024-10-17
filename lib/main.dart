@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:whats_app/core/theme/colors.dart';
+import 'package:whats_app/core/theme/light_theme_data.dart';
 import 'package:whats_app/features/splash/presentation/view/screens/splash_screen.dart';
 import 'package:whats_app/features/splash/presentation/view/screens/welcome_screen.dart';
 
@@ -17,11 +16,7 @@ class WhatsApp extends StatelessWidget {
     return MaterialApp(
       title: 'Whats App',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: AppColors.kPrimaryColor),
-        textTheme: GoogleFonts.interTextTheme(),
-        useMaterial3: true,
-      ),
+      theme: LightThemeData.getThemeData(),
       routes: {
         SplashScreen.id: (context) => const SplashScreen(),
         WelcomeScreen.id: (context) => const WelcomeScreen(),

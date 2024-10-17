@@ -23,7 +23,7 @@ class WhatsAppLogo extends StatelessWidget {
           "WhatsApp",
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            color: AppColors.kPrimaryColor,
+            color: AppColors.primaryColor,
             fontSize: 30,
           ),
         ),
