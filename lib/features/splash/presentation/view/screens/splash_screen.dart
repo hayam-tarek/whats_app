@@ -47,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 const Spacer(),
                 AnimatedTextKit(
                   animatedTexts: [
-                    typewriterAnimatedText(),
+                    typewriterAnimatedText(text: "The best chat app"),
                   ],
                   totalRepeatCount: 1,
                 ),

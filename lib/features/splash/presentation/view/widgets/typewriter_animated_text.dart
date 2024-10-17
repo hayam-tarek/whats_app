@@ -1,9 +1,9 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 
-TypewriterAnimatedText typewriterAnimatedText() {
+TypewriterAnimatedText typewriterAnimatedText({required String text}) {
   return TypewriterAnimatedText(
-    "The best chat app",
+    text,
     textStyle: const TextStyle(
       fontSize: 21,
       fontWeight: FontWeight.w600,
