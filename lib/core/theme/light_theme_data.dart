@@ -10,13 +10,13 @@ class LightThemeData {
       fontFamily: AssetFonts.primaryFont,
       useMaterial3: false,
       // textTheme: GoogleFonts.interTextTheme(),
-      // colorScheme: const ColorScheme.light(
-      //   brightness: Brightness.light,
-      //   primary: AppColors.primaryColor,
-      //   secondary: AppColors.secondaryLightColor,
-      //   tertiary: AppColors.tertiaryLightColor,
-      // ),
-      colorSchemeSeed: AppColors.primaryColor,
+      colorScheme: const ColorScheme.light(
+        brightness: Brightness.light,
+        primary: AppColors.primaryColor,
+        secondary: AppColors.secondaryLightColor,
+        tertiary: AppColors.tertiaryLightColor,
+      ),
+      // colorSchemeSeed: AppColors.primaryColor,
     );
   }
 }
