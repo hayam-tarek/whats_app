@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whats_app/core/constants/asset_spacing.dart';
+import 'package:whats_app/features/auth/presentation/views/widgets/register_body.dart';
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
@@ -7,6 +9,15 @@ class RegisterScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      body: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.symmetric(
+            horizontal: AssetSpacing.paddingSpace,
+          ),
+          child: RegisterBody(),
+        ),
+      ),
+    );
   }
 }

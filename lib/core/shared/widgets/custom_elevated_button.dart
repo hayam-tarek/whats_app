@@ -26,7 +26,12 @@ class CustomElevatedButton extends StatelessWidget {
             Size(MediaQuery.of(context).size.width, 45)),
       ),
       onPressed: onPressed,
-      child: Text(title),
+      child: Text(
+        title,
+        style: const TextStyle(
+          fontWeight: FontWeight.bold,
+        ),
+      ),
     );
   }
 }

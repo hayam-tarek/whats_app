@@ -53,6 +53,7 @@ class CustomTextFormField extends StatelessWidget {
             return null;
           },
       decoration: InputDecoration(
+        hintText: labelText,
         suffixIcon: suffixIcon,
         prefixIcon: prefixIcon,
         labelText: labelText,
