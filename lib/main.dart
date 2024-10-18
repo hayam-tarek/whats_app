@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whats_app/core/theme/light_theme_data.dart';
+import 'package:whats_app/features/home/presentation/views/screens/home_screen.dart';
 import 'package:whats_app/features/splash/presentation/view/screens/splash_screen.dart';
 import 'package:whats_app/features/splash/presentation/view/screens/welcome_screen.dart';
 
@@ -17,9 +18,11 @@ class WhatsApp extends StatelessWidget {
       title: 'Whats App',
       debugShowCheckedModeBanner: false,
       theme: LightThemeData.getThemeData(),
+      // theme: DarkThemeData.getThemeData(),
       routes: {
         SplashScreen.id: (context) => const SplashScreen(),
         WelcomeScreen.id: (context) => const WelcomeScreen(),
+        HomeScreen.id: (context) => const HomeScreen(),
       },
       initialRoute: SplashScreen.id,
     );
