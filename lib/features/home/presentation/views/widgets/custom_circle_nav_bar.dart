@@ -19,6 +19,7 @@ class CustomCircleNavBar extends StatelessWidget {
       activeIcons: const [
         Icon(Icons.chat),
         Icon(Icons.tips_and_updates),
+        Icon(Icons.groups),
         Icon(Icons.call),
       ],
       inactiveIcons: const [
@@ -32,6 +33,12 @@ class CustomCircleNavBar extends StatelessWidget {
           children: [
             Icon(Icons.tips_and_updates_outlined),
             Text("Updates"),
+          ],
+        ),
+        Column(
+          children: [
+            Icon(Icons.groups_outlined),
+            Text("Groups"),
           ],
         ),
         Column(

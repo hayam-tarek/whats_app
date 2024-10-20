@@ -10,8 +10,23 @@ AppBar customAppBar(BuildContext context) {
         icon: const Icon(Icons.search),
       ),
       PopupMenuButton(
+        position: PopupMenuPosition.under,
         itemBuilder: (context) {
           return [
+            PopupMenuItem(
+              value: 1,
+              child: const Text("New group"),
+              onTap: () {
+                //TODO new group
+              },
+            ),
+            PopupMenuItem(
+              value: 1,
+              child: const Text("Profile"),
+              onTap: () {
+                //TODO profile
+              },
+            ),
             PopupMenuItem(
               value: 1,
               child: const Text("Settings"),

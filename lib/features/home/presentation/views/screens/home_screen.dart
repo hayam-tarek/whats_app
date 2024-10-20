@@ -17,6 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Widget> screens = [
     const Center(child: Text("Chats")),
     const Center(child: Text("Updates")),
+    const Center(child: Text("Groups")),
     const Center(child: Text("Calls")),
   ];
   @override
