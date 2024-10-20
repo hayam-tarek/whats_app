@@ -1,6 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:whats_app/features/splash/presentation/view/screens/welcome_screen.dart';
+import 'package:whats_app/features/home/presentation/views/screens/home_screen.dart';
 import 'package:whats_app/features/splash/presentation/view/widgets/typewriter_animated_text.dart';
 import 'package:whats_app/features/splash/presentation/view/widgets/whatsapp_logo.dart';
 
@@ -21,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
       ),
       () {
         if (mounted) {
-          Navigator.pushReplacementNamed(context, WelcomeScreen.id);
+          Navigator.pushReplacementNamed(context, HomeScreen.id);
         }
       },
     );

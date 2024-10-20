@@ -5,6 +5,7 @@ import 'package:whats_app/core/theme/colors.dart';
 class DarkThemeData {
   static ThemeData getThemeData() {
     return ThemeData(
+      primaryColor: AppColors.primaryColor,
       brightness: Brightness.dark,
       scaffoldBackgroundColor: AppColors.blackColor,
       fontFamily: AssetFonts.primaryFont,
