@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:whats_app/features/chat/data/models/sender_model.dart';
 import 'package:whats_app/features/chat/presentation/views/widgets/chats_screen_body.dart';
+import 'package:whats_app/features/chat/presentation/views/widgets/custom_floating_action_button.dart';
 
 class ChatsScreen extends StatelessWidget {
   const ChatsScreen({super.key});
@@ -29,6 +30,12 @@ class ChatsScreen extends StatelessWidget {
       ),
     ];
     return Scaffold(
+      floatingActionButton: CustomFloatingActionButton(
+        icon: Icons.message,
+        onPressed: () {
+          //TODO open contacts screen
+        },
+      ),
       body: SafeArea(
         child: ChatsScreenBody(messages: messages),
       ),
