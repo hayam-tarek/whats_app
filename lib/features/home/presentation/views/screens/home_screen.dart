@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whats_app/features/calls/presentation/views/screens/calls_screen.dart';
 import 'package:whats_app/features/chat/presentation/views/screens/chats_screen.dart';
 import 'package:whats_app/features/home/presentation/views/widgets/custom_app_bar.dart';
 import 'package:whats_app/features/home/presentation/views/widgets/custom_circle_nav_bar.dart';
@@ -20,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
     const ChatsScreen(),
     const UpdatesScreen(),
     const Center(child: Text("Groups")),
-    const Center(child: Text("Calls")),
+    const CallsScreen(),
   ];
   @override
   Widget build(BuildContext context) {
