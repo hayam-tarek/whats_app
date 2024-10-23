@@ -6,7 +6,7 @@ import 'package:whats_app/features/splash/presentation/view/widgets/whatsapp_log
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
-  static const String id = "splashScreen";
+  static const String id = "splash-screen";
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
