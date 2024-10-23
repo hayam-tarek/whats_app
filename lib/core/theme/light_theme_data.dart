@@ -6,6 +6,7 @@ class LightThemeData {
   static ThemeData getThemeData() {
     return ThemeData(
       brightness: Brightness.light,
+      primaryColor: AppColors.primaryColor,
       scaffoldBackgroundColor: AppColors.whiteColor,
       fontFamily: AssetFonts.primaryFont,
       useMaterial3: false,
