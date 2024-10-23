@@ -1,8 +1,8 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:whats_app/core/shared/widgets/typewriter_animated_text.dart';
-import 'package:whats_app/core/shared/widgets/whatsapp_logo.dart';
-import 'package:whats_app/features/auth/presentation/views/screens/login_screen.dart';
+import 'package:whats_app/features/home/presentation/views/screens/home_screen.dart';
+import 'package:whats_app/features/splash/presentation/view/widgets/typewriter_animated_text.dart';
+import 'package:whats_app/features/splash/presentation/view/widgets/whatsapp_logo.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -21,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
       ),
       () {
         if (mounted) {
-          Navigator.pushReplacementNamed(context, LoginScreen.id);
+          Navigator.pushReplacementNamed(context, HomeScreen.id);
         }
       },
     );
