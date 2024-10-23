@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whats_app/features/home/presentation/views/screens/custom_search_delegate.dart';
+import 'package:whats_app/features/profile/presentation/views/screen/profile_screen.dart';
 
 AppBar customAppBar(BuildContext context) {
   return AppBar(
@@ -28,7 +29,7 @@ AppBar customAppBar(BuildContext context) {
               value: 1,
               child: const Text("Profile"),
               onTap: () {
-                //TODO profile
+                Navigator.pushNamed(context, ProfileScreen.id);
               },
             ),
             PopupMenuItem(
