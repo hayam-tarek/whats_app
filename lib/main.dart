@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:whats_app/core/theme/light_theme_data.dart';
 import 'package:whats_app/features/chat/presentation/views/screens/chats_screen.dart';
+import 'package:whats_app/features/home/presentation/views/screens/home_screen.dart';
+import 'package:whats_app/features/auth/presentation/views/screens/login_screen.dart';
+import 'package:whats_app/features/auth/presentation/views/screens/register_screen.dart';
 import 'package:whats_app/features/splash/presentation/view/screens/splash_screen.dart';
-import 'package:whats_app/features/splash/presentation/view/screens/welcome_screen.dart';
 
 void main() {
   runApp(const WhatsApp());
@@ -18,10 +20,14 @@ class WhatsApp extends StatelessWidget {
       title: 'Whats App',
       debugShowCheckedModeBanner: false,
       theme: LightThemeData.getThemeData(),
+      // theme: DarkThemeData.getThemeData(),
       routes: {
         SplashScreen.id: (context) => const SplashScreen(),
         WelcomeScreen.id: (context) => const WelcomeScreen(),
         ChatsScreen.id: (context) => const ChatsScreen(),
+        HomeScreen.id: (context) => const HomeScreen(),
+        LoginScreen.id: (context) => const LoginScreen(),
+        RegisterScreen.id: (context) => const RegisterScreen(),
       },
       initialRoute: ChatsScreen.id,
     );
