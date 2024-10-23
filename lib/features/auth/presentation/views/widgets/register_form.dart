@@ -4,6 +4,7 @@ import 'package:whats_app/features/auth/presentation/views/widgets/email_text_fo
 import 'package:whats_app/features/auth/presentation/views/widgets/name_text_form_field.dart';
 import 'package:whats_app/features/auth/presentation/views/widgets/password_text_form_field.dart';
 import 'package:whats_app/features/auth/presentation/views/widgets/phon_text_form_field.dart';
+import 'package:whats_app/features/home/presentation/views/screens/home_screen.dart';
 
 class RegisterForm extends StatefulWidget {
   const RegisterForm({super.key});
@@ -52,6 +53,7 @@ class _RegisterFormState extends State<RegisterForm> {
               if (formKey.currentState!.validate()) {
                 formKey.currentState!.save();
                 // TODO: Add register logic
+                Navigator.pushReplacementNamed(context, HomeScreen.id);
               } else {
                 setState(() {
                   autovalidateMode = AutovalidateMode.always;

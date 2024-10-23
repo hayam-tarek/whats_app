@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:whats_app/core/shared/widgets/custom_elevated_button.dart';
 import 'package:whats_app/features/auth/presentation/views/widgets/email_text_form_field.dart';
 import 'package:whats_app/features/auth/presentation/views/widgets/password_text_form_field.dart';
+import 'package:whats_app/features/home/presentation/views/screens/home_screen.dart';
 
 class LoginForm extends StatefulWidget {
   const LoginForm({super.key});
@@ -40,6 +41,7 @@ class _LoginFormState extends State<LoginForm> {
               if (formKey.currentState!.validate()) {
                 formKey.currentState!.save();
                 // TODO: Add login logic
+                Navigator.pushReplacementNamed(context, HomeScreen.id);
               } else {
                 setState(() {
                   autovalidateMode = AutovalidateMode.always;

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:whats_app/core/theme/light_theme_data.dart';
-import 'package:whats_app/features/chat/presentation/views/screens/chats_screen.dart';
-import 'package:whats_app/features/home/presentation/views/screens/home_screen.dart';
 import 'package:whats_app/features/auth/presentation/views/screens/login_screen.dart';
 import 'package:whats_app/features/auth/presentation/views/screens/register_screen.dart';
+import 'package:whats_app/features/chat/presentation/views/screens/chats_screen.dart';
+import 'package:whats_app/features/home/presentation/views/screens/home_screen.dart';
 import 'package:whats_app/features/splash/presentation/view/screens/splash_screen.dart';
 
 import 'features/updates/presentation/views/screens/updates_screen.dart';
@@ -15,7 +15,6 @@ void main() {
 class WhatsApp extends StatelessWidget {
   const WhatsApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,16 +24,13 @@ class WhatsApp extends StatelessWidget {
       // theme: DarkThemeData.getThemeData(),
       routes: {
         SplashScreen.id: (context) => const SplashScreen(),
-        WelcomeScreen.id: (context) => const WelcomeScreen(),
-        UpdatesScreen.id: (context) => const UpdatesScreen(),
-      },
-      initialRoute: UpdatesScreen.id,
-        ChatsScreen.id: (context) => const ChatsScreen(),
-        HomeScreen.id: (context) => const HomeScreen(),
         LoginScreen.id: (context) => const LoginScreen(),
         RegisterScreen.id: (context) => const RegisterScreen(),
+        HomeScreen.id: (context) => const HomeScreen(),
+        ChatsScreen.id: (context) => const ChatsScreen(),
+        UpdatesScreen.id: (context) => const UpdatesScreen(),
       },
-      initialRoute: ChatsScreen.id,
+      initialRoute: SplashScreen.id,
     );
   }
 }
