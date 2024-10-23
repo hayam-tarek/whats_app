@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:whats_app/features/home/presentation/views/screens/custom_search_delegate.dart';
 
 AppBar customAppBar(BuildContext context) {
   return AppBar(
     actions: [
       IconButton(
         onPressed: () {
-          //TODO search
+          showSearch(
+            context: context,
+            delegate: CustomSearchDelegate(),
+          );
         },
         icon: const Icon(Icons.search),
       ),
