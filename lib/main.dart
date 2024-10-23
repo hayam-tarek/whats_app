@@ -6,6 +6,7 @@ import 'package:whats_app/features/chat/presentation/views/screens/chats_screen.
 import 'package:whats_app/features/home/presentation/views/screens/home_screen.dart';
 import 'package:whats_app/features/splash/presentation/view/screens/splash_screen.dart';
 
+import 'features/calls/presentation/views/screens/calls_screen.dart';
 import 'features/updates/presentation/views/screens/updates_screen.dart';
 
 void main() {
@@ -29,6 +30,7 @@ class WhatsApp extends StatelessWidget {
         HomeScreen.id: (context) => const HomeScreen(),
         ChatsScreen.id: (context) => const ChatsScreen(),
         UpdatesScreen.id: (context) => const UpdatesScreen(),
+        CallsScreen.id: (context) => const CallsScreen(),
       },
       initialRoute: SplashScreen.id,
     );
