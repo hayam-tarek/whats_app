@@ -7,6 +7,7 @@ class DarkThemeData {
     return ThemeData(
       primaryColor: AppColors.primaryColor,
       brightness: Brightness.dark,
+      primaryColor: AppColors.primaryColor,
       scaffoldBackgroundColor: AppColors.blackColor,
       fontFamily: AssetFonts.primaryFont,
       useMaterial3: false,

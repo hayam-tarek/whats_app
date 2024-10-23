@@ -6,6 +6,8 @@ import 'package:whats_app/features/auth/presentation/views/screens/login_screen.
 import 'package:whats_app/features/auth/presentation/views/screens/register_screen.dart';
 import 'package:whats_app/features/splash/presentation/view/screens/splash_screen.dart';
 
+import 'features/updates/presentation/views/screens/updates_screen.dart';
+
 void main() {
   runApp(const WhatsApp());
 }
@@ -24,6 +26,9 @@ class WhatsApp extends StatelessWidget {
       routes: {
         SplashScreen.id: (context) => const SplashScreen(),
         WelcomeScreen.id: (context) => const WelcomeScreen(),
+        UpdatesScreen.id: (context) => const UpdatesScreen(),
+      },
+      initialRoute: UpdatesScreen.id,
         ChatsScreen.id: (context) => const ChatsScreen(),
         HomeScreen.id: (context) => const HomeScreen(),
         LoginScreen.id: (context) => const LoginScreen(),
