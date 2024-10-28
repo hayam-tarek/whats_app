@@ -53,8 +53,8 @@ class CustomCircleNavBar extends StatelessWidget {
       circleColor: Theme.of(context).scaffoldBackgroundColor,
       circleShadowColor: Theme.of(context).primaryColor,
       elevation: 10,
-      height: 60,
-      circleWidth: 60,
+      height: 50,
+      circleWidth: 50,
       padding: const EdgeInsets.only(left: 16, right: 16, bottom: 20),
       cornerRadius: const BorderRadius.only(
         topLeft: Radius.circular(8),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:whats_app/features/home/presentation/views/screens/custom_search_delegate.dart';
+import 'package:whats_app/features/auth/presentation/views/screens/login_screen.dart';
+import 'package:whats_app/features/home/presentation/views/widgets/custom_search_delegate.dart';
 import 'package:whats_app/features/profile/presentation/views/screen/profile_screen.dart';
 
 AppBar customAppBar(BuildContext context) {
@@ -44,6 +45,11 @@ AppBar customAppBar(BuildContext context) {
               child: const Text("Logout"),
               onTap: () {
                 //TODO logout
+                Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  LoginScreen.id,
+                  (route) => false,
+                );
               },
             ),
           ];

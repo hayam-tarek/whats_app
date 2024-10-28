@@ -19,7 +19,7 @@ class CustomEmailTextFormField extends StatelessWidget {
         validator: (email) {
           if (email == null || email.isEmpty) {
             return 'Please enter your email!';
-          } else if (!email.contains('@')) {
+          } else if (!email.contains('@') || !email.contains('.')) {
             return 'Please enter a valid email!';
           }
           return null;
