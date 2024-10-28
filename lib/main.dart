@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:whats_app/core/theme/light_theme_data.dart';
 import 'package:whats_app/features/auth/presentation/views/screens/login_screen.dart';
 import 'package:whats_app/features/auth/presentation/views/screens/register_screen.dart';
+import 'package:whats_app/features/chat/presentation/views/screens/chat_screen.dart';
 import 'package:whats_app/features/chat/presentation/views/screens/chats_screen.dart';
 import 'package:whats_app/features/home/presentation/views/screens/home_screen.dart';
 import 'package:whats_app/features/splash/presentation/view/screens/splash_screen.dart';
@@ -33,6 +34,7 @@ class WhatsApp extends StatelessWidget {
         UpdatesScreen.id: (context) => const UpdatesScreen(),
         CallsScreen.id: (context) => const CallsScreen(),
         ProfileScreen.id: (context) => const ProfileScreen(),
+        ChatScreen.id: (context) => const ChatScreen(),
       },
       initialRoute: SplashScreen.id,
     );

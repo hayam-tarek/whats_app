@@ -7,7 +7,7 @@ import 'package:whats_app/features/chat/presentation/views/widgets/custom_floati
 
 class ChatsScreen extends StatelessWidget {
   const ChatsScreen({super.key});
-  static const String id = 'chat-screen';
+  static const String id = 'chats-screen';
 
   @override
   Widget build(BuildContext context) {

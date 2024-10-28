@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whats_app/core/theme/colors.dart';
 import 'package:whats_app/features/chat/data/models/sender_model.dart';
+import 'package:whats_app/features/chat/presentation/views/screens/chat_screen.dart';
 
 class MessageItem extends StatefulWidget {
   const MessageItem({super.key, required this.senderModel});
@@ -16,6 +17,11 @@ class _MessageItemState extends State<MessageItem> {
     return InkWell(
       onTap: () {
         //TODO open chat screen
+        Navigator.pushNamed(
+          context,
+          ChatScreen.id,
+          arguments: widget.senderModel,
+        );
         setState(() {
           widget.senderModel.messageCount = 0;
         });
